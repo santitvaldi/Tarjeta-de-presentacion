@@ -1,0 +1,83 @@
+body{
+    background-color: #050505;
+    font-family: Montserrat;
+}
+
+.card{
+ 
+    color:#8a723f;
+    background: linear-gradient(#050505 300px, #8a723f) ; 
+    text-align: center;
+    width: 280px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius:15px;
+    box-shadow: 0 0 200px 0 #8a723f;
+  
+
+}
+
+.card-title{
+    font-size: 2em;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.card-title::selection{
+    background-color: #8a723f;
+    color: #050505;
+
+}
+
+.card-ig{
+
+    font-size: 1em;
+    font-weight: 500;
+    margin: 10px;
+    margin-bottom: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: #050505;
+}
+a::selection{
+    background-color: #050505;
+    color: #8a723f;
+}
+
+.ig{
+    color: #8a723f;
+}
+
+.card-text{
+    color: #050505;
+    padding: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: 40px 1px 10px 1px
+ 
+}
+
+.card-text::selection{
+    background-color: #050505;
+    color: #8a723f;
+}
+
+.card-img{
+    margin: 20px;
+    width: 170px;
+}
+
+.card-ig::selection{
+    background-color: #8a723f;
+    color: #050505;
+}
+
+.ig::selection{
+    background-color: #8a723f;
+    color: #050505;
+}

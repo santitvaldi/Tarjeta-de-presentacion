@@ -1,0 +1,52 @@
+body {
+    background-color: #050505;
+    font-family: Montserrat, sans-serif;
+    color: #a79367;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el contenedor de la página */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilo para el título de la página */
+.page-title {
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+/* Estilo para cada fila */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre las imágenes */
+    margin-bottom: 20px; /* Espacio entre filas */
+}
+
+/* Estilo de cada imagen con su título */
+.image-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo de las imágenes */
+.image {
+    width: 100%;
+    max-width: 200px; /* Define un tamaño máximo para las imágenes */
+    height: 150px;
+    margin: 0; /* Elimina márgenes extra de las imágenes */
+    padding: 0; /* Elimina relleno si lo hay */
+}
+
+/* Estilo para el título debajo de cada imagen */
+.image-title {
+    font-size: 1.2em;
+    margin-top: 5px; /* Reduce el margen entre la imagen y el título */
+}

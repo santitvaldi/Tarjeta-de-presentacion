@@ -1,83 +1,111 @@
-body{
+body {
     background-color: #050505;
     font-family: Montserrat;
 }
 
-.card{
- 
-    color:#8a723f;
-    background: linear-gradient(#050505 300px, #8a723f) ; 
+.card-container {
+    display: flex; /* Activa flexbox */
+    justify-content: flex-start; /* Alinea las tarjetas a la izquierda */
+    align-items: flex-start; /* Alinea las tarjetas arriba */
+}
+
+/* Asegura que el enlace ocupe toda la tarjeta */
+.card-link {
+    display: block; /* Convierte el enlace en un contenedor */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del contenido interno */
+}
+
+/* Estilo de las tarjetas de Contactos, Cursos y Conocimientos */
+.card-cursos, .card-conocimiento {
+    color: #050505;
+    background: #a79367;
+    text-align: center;
+    width: 200px; /* Mantén el mismo ancho */
+    height: 50px;
+    margin: 25px 200px 0 0; /* Ajusta si es necesario */
+    padding: 20px; /* Uniforme para todas las tarjetas */
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #a79367;
+    transition: transform 0.3s ease;
+}
+
+.card-cursos:hover, .card-conocimiento:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0 #a79367;
+}
+
+/* Estilo del enlace dentro de Cursos y Conocimientos */
+.card-link-cursos, .card-link-conocimientos {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #050505;
+    display: block;
+    margin: auto; 
+    margin-top: 4px;
+    padding: 6px;
+}
+
+/* Estilo de los íconos dentro de la tarjeta de Contactos */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px; /* Añade espacio arriba si es necesario */
+    padding: 6px;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+.card {
+    color: #050505;
+    background: #a79367;
     text-align: center;
     width: 280px;
+    height: 450px;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 20px;
-    border-radius:15px;
-    box-shadow: 0 0 200px 0 #8a723f;
-  
-
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 #a79367;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.card-title{
+.card:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la tarjeta */
+    box-shadow: 0 0 80px 0 #a79367; /* Aumenta la sombra */
+}
+
+.card-title {
     font-size: 2em;
     margin: auto;
     margin-top: 35px;
     margin-bottom: 25px;
 }
 
-.card-title::selection{
-    background-color: #8a723f;
-    color: #050505;
-
-}
-
-.card-ig{
-
-    font-size: 1em;
-    font-weight: 500;
-    margin: 10px;
-    margin-bottom: 25px;
-}
-
-a{
-    text-decoration: none;
-    color: #050505;
-}
-a::selection{
-    background-color: #050505;
-    color: #8a723f;
-}
-
-.ig{
-    color: #8a723f;
-}
-
-.card-text{
+.card-text {
     color: #050505;
     padding: 20px;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 500;
-    margin: 40px 1px 10px 1px
- 
+    margin: 10px 1px 10px 1px;
 }
 
-.card-text::selection{
-    background-color: #050505;
-    color: #8a723f;
-}
-
-.card-img{
+.card-img {
     margin: 20px;
-    width: 170px;
+    margin-top: 40px;
+    width: 160px;
 }
 
-.card-ig::selection{
-    background-color: #8a723f;
-    color: #050505;
-}
-
-.ig::selection{
-    background-color: #8a723f;
+a {
+    text-decoration: none;
     color: #050505;
 }

@@ -1,0 +1,56 @@
+body {
+    background-color: #050505;
+    font-family: Montserrat, sans-serif;
+    color: #a79367;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el contenedor de la página */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilo para el título de la página */
+.page-title {
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+/* Contenedor para las dos cajas (cards) */
+.card-container {
+    display: flex;
+    justify-content: center; /* Centra las cajas horizontalmente */
+    gap: 30px; /* Espacio entre las cajas */
+}
+
+/* Estilo de las cajas */
+.card {
+    color: #050505;
+    background: #a79367;
+    text-align: center;
+    width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 #a79367;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para las cajas */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para las imágenes dentro de las cajas */
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo para el título de cada caja */
+.card-title {
+    font-size: 1.8em;
+    margin-top: 20px;
+}

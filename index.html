@@ -7,29 +7,49 @@
     <meta name="author" content="Santiago Valdi">
     <meta name="description" content="Esta es la primera página web que estoy haciendo">
     <meta name="keywords" content="Santiago, Valdi, guitarra, unsam, Programación">
-    <link rel="icon" href="imagenes/Rolling-Stones-Logo-1.png" type="image/png">
+    <link rel="icon" href="imagenes/Rolling-Stones-Logo-1.png" type="image/png" sizes="32x32">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="fonts.css">
-
 </head>
 <body>
 
+<div class="card-container">
+    <!-- Tarjeta Principal (a la izquierda) -->
     <div class="card">
-
         <h1 class="card-title">Santiago Valdi</h1>
-
-        <div class="card-ig">
-            Instagram: 
-            <a class="ig" href="https://instagram.com/santitvaldi" rel="noopener noreferrer nofollow" target="_blank" title="santitvaldi">@santitvaldi</a>
-        </div>
     
         <img class="card-img" src="imagenes/Rolling-Stones-Logo-1.png" alt="Rolling Stones">
 
-        <p class="card-text">Nací el 2 de Mayo de 2005, toco la guitarra y estudio la <a href="https://unsam.edu.ar/escuelas/ecyt/107/ciencia/programacion-informatica" rel="noopener noreferrer nofollow" target="_blank" title="Programación Unsam">Tecnicatura en Programación Informática</a> en la <a href="https://unsam.edu.ar/escuelas/ecyt/" rel="noopener noreferrer nofollow" target="_blank" title="Unsam">Universidad Nacional de San Martín</a>.</p>
-
-        
+        <div class="social-icons">
+            <a href="https://instagram.com/santitvaldi" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <img src="imagenes/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/santitvaldi" target="_blank" rel="noopener noreferrer" title="GitHub">
+                <img src="imagenes/github-icon.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/santiago-valdi-66926b24a/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                <img src="imagenes/linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
     </div>
 
+    <!-- Caja de Contactos y Cursos (a la derecha) -->
+    <div>
+        <!-- Tarjeta de Cursos --> 
+        <a href="cursos.html" class="card-link" rel="noopener noreferrer nofollow" target="_blank" title="Mis Cursos">
+            <div class="card-cursos">
+                <div class="card-link-cursos">Cursos</div>
+            </div>
+        </a>
+
+        <!-- Tarjeta de Conocimientos -->
+        <a href="conocimientos.html" class="card-link" rel="noopener noreferrer nofollow" target="_blank" title="Conocimientos">
+            <div class="card-conocimiento">
+                <div class="card-link-conocimientos">Conocimientos</div>
+            </div>
+        </a>
+    </div>
+</div>
 
 </body>
 </html>
